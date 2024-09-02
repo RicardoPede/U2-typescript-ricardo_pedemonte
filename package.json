@@ -1,0 +1,21 @@
+{
+  "name": "u2-typescript-ricardo_pedemonte",
+  "version": "1.0.0",
+  "description": "TypesScript\r Inicializar proyecto:\r ```bash\r npm init -y\r ```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rimraf ./dist & tsc",
+    "start": "npm run build & node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "nodemon": "^3.1.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
