@@ -2,16 +2,15 @@
 // método drive() que imprima un mensaje en la consola diciendo "Driving a [make]".
 
 class Car {
-    make: string;
-
-    constructor(make: string) {
-        this.make = make;
-    }
+    make?: string;
 
     drive(): void {
         console.log(`Driving a ${this.make}`);
     }
 }
 
-let car = new Car('Ford');
+let car = new Car();
+car.make = 'Ford';
 car.drive();
+// Driving a Ford
+
